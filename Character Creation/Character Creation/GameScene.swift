@@ -15,13 +15,14 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView)
     {
-        backgroundColor = .black
+        backgroundColor = .white
         buildCharacter()
+       // animateCharacter()
     }
    //builds character animation
     func buildCharacter() {
-        let characterAnimationAtlas = SKTextureAtlas(named: "frontfacing model")
-        var walkFrames: [SKTexture] = [] //array tat contains images
+        let characterAnimationAtlas = SKTextureAtlas(named: "characterImages")
+        var walkFrames: [SKTexture] = [] //array that contains images
         
         let numImages = characterAnimationAtlas.textureNames.count
         for i in 1...numImages { //loads images into array
@@ -35,7 +36,7 @@ class GameScene: SKScene {
         addChild(character)
     }
     
-    func animatedCharacter()
+    func animateCharacter()
     {
         character.run(SKAction.repeatForever(
             SKAction.animate(with: characterWalkingFrames, timePerFrame: 0.1,resize: false, restore: true)),withKey: "walkingInPlaceCharacter")

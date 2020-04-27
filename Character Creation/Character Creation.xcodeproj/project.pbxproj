@@ -16,7 +16,7 @@
 		0F7DB666244CB59500340D9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7DB664244CB59500340D9B /* LaunchScreen.storyboard */; };
 		0F7DB671244CB59600340D9B /* Character_CreationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DB670244CB59600340D9B /* Character_CreationTests.swift */; };
 		0F7DB67C244CB59600340D9B /* Character_CreationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DB67B244CB59600340D9B /* Character_CreationUITests.swift */; };
-		0F87B28C24562A7B00CB4173 /* Loading_Screen.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0F87B28B24562A7B00CB4173 /* Loading_Screen.atlas */; };
+		0F87B28C24562A7B00CB4173 /* characterImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0F87B28B24562A7B00CB4173 /* characterImages.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		0F7DB677244CB59600340D9B /* Character CreationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Character CreationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7DB67B244CB59600340D9B /* Character_CreationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character_CreationUITests.swift; sourceTree = "<group>"; };
 		0F7DB67D244CB59600340D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F87B28B24562A7B00CB4173 /* Loading_Screen.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Loading_Screen.atlas; path = ../../Loading_Screen.atlas; sourceTree = "<group>"; };
+		0F87B28B24562A7B00CB4173 /* characterImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = characterImages.atlas; path = ../../characterImages.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 		0F7DB654244CB59100340D9B /* Character Creation */ = {
 			isa = PBXGroup;
 			children = (
-				0F87B28B24562A7B00CB4173 /* Loading_Screen.atlas */,
+				0F87B28B24562A7B00CB4173 /* characterImages.atlas */,
 				0F7DB655244CB59100340D9B /* AppDelegate.swift */,
 				0F7DB659244CB59100340D9B /* Actions.sks */,
 				0F7DB65B244CB59100340D9B /* GameScene.swift */,
@@ -242,7 +242,7 @@
 				0F7DB663244CB59500340D9B /* Assets.xcassets in Resources */,
 				0F7DB666244CB59500340D9B /* LaunchScreen.storyboard in Resources */,
 				0F7DB65A244CB59100340D9B /* Actions.sks in Resources */,
-				0F87B28C24562A7B00CB4173 /* Loading_Screen.atlas in Resources */,
+				0F87B28C24562A7B00CB4173 /* characterImages.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

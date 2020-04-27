@@ -1,34 +1,22 @@
-//
-//  GameViewController.swift
-//  Character Creation
-//
-//  Created by Aaron Crittenden on 4/19/20.
-//  Copyright © 2020 Aaron Crittenden. All rights reserved.
-//
-
 import UIKit
 import SpriteKit
-import GameplayKit
 
-class GameViewController: UIViewController
-{
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let scene = GameScene(size:CGSize(width: 2048, height: 1536))
-        let skView = self.view as! SKView
-        skView.showsFPS = true //displays FPS
-        skView.showsNodeCount = true //dispays node count
-        skView.ignoresSiblingOrder = true
-        scene.scaleMode = .aspectFill
-        skView.presentScene(scene)
-        
+class GameViewController: UIViewController {
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    if let view = view as? SKView {
+      // Create the scene programmatically
+      let scene = GameScene(size: view.bounds.size)
+      scene.scaleMode = .resizeFill
+      view.ignoresSiblingOrder = true
+      view.showsFPS = true
+      view.showsNodeCount = true
+      view.presentScene(scene)
     }
-
-
-override var prefersStatusBarHidden: Bool {
+  }
+  
+  override var prefersStatusBarHidden: Bool {
     return true
-}
-    
-    
-
+  }
 }
